@@ -13,9 +13,9 @@ app.use("/example", exampleRouter);
 
 app.use(bodyParser.json());
 
-mongoose.connect(`${dbUrl}${dbName}`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+// mongoose.connect(`${dbUrl}${dbName}`, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
